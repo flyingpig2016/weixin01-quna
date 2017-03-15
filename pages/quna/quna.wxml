@@ -1,0 +1,72 @@
+<view class="page">
+	<view class="header">
+		<image src="../../img/1.jpg" class="header_img"></image>
+	</view>
+	<view class="content">
+		<view class="section_nav">
+			<view class="left">
+				酒店
+			</view>
+			<view class="right">
+				<view class="item border_right border_bottom">特惠酒店</view>
+				<view class="item border_bottom">国际酒店</view>
+				<view class="item border_right">客栈▪民宿</view>
+				<view class="item">会场▪聚会</view>
+			</view>
+		</view>
+		<view class="section_nav">
+			<view class="left">
+				机票
+			</view>
+			<view class="right">
+				<view class="item border_right border_bottom">低价机票</view>
+				<view class="item border_bottom">汽车票▪船票</view>
+				<view class="item border_right">火车票</view>
+				<view class="item">专车▪自驾</view>
+			</view>
+		</view>
+		<view class="section_nav">
+			<view class="left">
+				度假
+			</view>
+			<view class="right">
+				<view class="item border_right border_bottom">景点▪门票</view>
+				<view class="item border_bottom">旅游团购</view>
+				<view class="item border_right">自由行</view>
+				<view class="item">周边▪短途</view>
+			</view>
+		</view>
+		<view class="section_bottom">
+			<view class="item_bottom border_right">金融▪理财</view>
+			<view class="item_bottom border_right">保险▪车险</view>
+			<view class="item_bottom">全球购</view>
+		</view>
+		<view class="section_rec">
+			<view class="recommend" >
+				<view class="rec_img icon1"></view>
+				签证
+			</view>
+			<view class="recommend">
+				<view class="rec_img icon2"></view>
+				出境游
+			</view>
+			<view class="recommend">
+				<view class="rec_img icon3"></view>
+				一日游
+			</view>
+			<view class="recommend">
+				<view class="rec_img icon4"></view>
+				汽车票
+			</view>
+			<view class="recommend">
+				<view class="rec_img icon5"></view>
+				一元夺宝
+			</view>
+			<view class="recommend">
+				<view class="rec_img icon6"></view>
+				超级巴士
+			</view>
+		</view>
+	</view>
+
+</view> 
