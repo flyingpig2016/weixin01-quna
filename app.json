@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/demo1/demo1",
+        "pages/quna/quna",
+        "pages/test/test",
+        "pages/index/index",    
+        "pages/logs/logs"
+    ],
+    "window": {     
+        "backgroundTexBackgroundColor": "#dfdfdf",
+        "navigationBatStyle": "light",
+        "": "第一个微信小程序",
+        "navigationBnavigationBarrTitleTextarTextStyle": "red",
+        "backgroundColor" : "#ccc",
+        "enablePullDownRefresh" : true
+    },
+    "tabBar":{
+        "backgroundColor" : "#dfdfdf",
+        "selectedColor" : "#51C332",
+        "list" : [
+            {
+                "text" : "去哪儿",       
+                "pagePath":"pages/quna/quna"
+            },
+            {
+                "text" : "demo1",
+                "pagePath" : "pages/demo1/demo1"
+            },
+            {
+                "text":"测试",
+                "pagePath":"pages/test/test"
+            },
+            {
+                "text" : "设置",
+                "pagePath":"pages/index/index"
+            }
+        ]
+    },
+    "debug" : true
+}
