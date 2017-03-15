@@ -1,0 +1,83 @@
+<view class="page">
+	<view class="page_hd">
+		<text>弹性盒子</text>
+	</view>
+	<view class="page_bd">
+		<view class="wrapper">
+			<view class="item">{{msg}}</view>
+			<view class="item center1">{{time}}</view>
+			<view class="item">{{name}}</view>
+
+			<view>{{text}}</view>
+			<view bindtap="changeText">Change text data:{{text}}</view>
+			<view>array1[0] = {{array1[0]}}</view>
+			<view bindtap="changeItemInArray">Change array1 data = {{array1[0]}}</view>			
+			<view>object1.text = {{object1.text}}</view>
+			<view bindtap="changeItemInObject">change object1.text = {{object1.text}}</view>
+
+
+			<view class="item" wx:if="{{condition>90}}">
+				大于90            
+			</view>
+			<view class="item" wx:elif="{{condition>80}}">
+				大于80  
+			</view>
+			<view class="item order6" wx:else>
+				默认60 
+			</view>
+			<view class="item" hidden="{{flag ? false : true}}">hidden</view>
+			<view class="item">
+				<view  wx:if="{{condition}}">true</view>
+				<view wx:if="{{length > 6}}">{{length}}>6</view>
+				<view wx:elif="{{length > 2}}">{{length}}>2</view>
+				<view wx:else>{{length}}</view>
+			</view>
+			-------------------------------
+			<view class="item">
+				<view class="arrs" wx:for="{{array}}"wx:key="*this">{{index}}:{{item}}</view>
+			</view>
+			-------------------------------
+			<view wx:for="{{[1, 2, 3]}}" wx:for-item="i" wx:key="*this">
+			  <view wx:for="{{[1, 2, 3 ]}}" wx:for-item="j" wx:key="*this">
+			    <view wx:if="{{i <= j}}">
+			      {{i}} * {{j}} = {{i * j}}
+			    </view>
+			  </view>
+			</view>
+			-------------------------------
+			<view class="abc" wx:for="{{list}}" wx:key="{{name}}" wx:key="{{address}}" wx:key="{{age}}">
+				{{index}}--->{{item.name}} ---> {{item.address}} ---> {{item.age}}
+			</view>
+			-------------------------------
+			<view class="abc" wx:for="{{list}}" wx:for-item="a" wx:for-index="b" wx:key="{{name}}" wx:key="{{address}}" wx:key="{{age}}">
+				{{b}} -->{{a.name}} --> {{a.address}} --> {{a.age}}
+			</view>
+			-------------------------------
+			<view wx:for="{{array}}" wx:key="*this">    
+				{{item}} 
+			</view>
+			-------------------------------
+			<view data-flag="1" wx:if="{{flag}}">
+				df=1:  比较wx:if和hidden的值
+			</view>
+			<view data-flag="2" hidden="{{flag}}">
+				df=2:  比较wx:if和hidden的值
+			</view>
+			-------------------------------
+			<block wx:for="{{[1, 2, 3]}}">
+			  <view> {{index}}:{{item}} </view>
+			</block>
+			-------------------------------
+			<template name="info"> 
+				<view>
+					<text>{{name}}</text>
+					<text>{{address}}</text>   
+				</view>
+			</template> 
+			<template is="info" data="{{...item}}"></template>
+		</view> 
+		<view>
+
+		</view>
+	</view>
+</view>  

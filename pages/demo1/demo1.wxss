@@ -1,0 +1,23 @@
+.page_hd{
+	text-align : center;
+	line-height:3rem;
+}
+.wrapper{
+	display:flex;
+	flex-direction:column;
+	}
+.item{
+	display:flex;
+	/*相当于width:33.333%;*/
+	flex:auto; 
+	height:200rpx;
+	text-align:center;
+	border:1px solid #dfdfdf;
+}
+.order6{ 
+	order:1;
+}
+
+.arrs{
+	flex:1;
+}
