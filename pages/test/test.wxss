@@ -1,0 +1,15 @@
+.mod-test{
+	text-align:center;
+}
+.mod-test2{
+	height:30px;
+	line-height:30px;
+	background:#dfdfdf;
+	font-size:15px;
+}
+.mod-test .item{
+	text-align:left;
+	padding:5px;
+	border:1px solid #dfdfdf;	
+	font-size:15px;	
+}

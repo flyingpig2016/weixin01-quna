@@ -1,0 +1,15 @@
+
+<view class="mod-test">
+	{{name}}
+	
+	<view class="mod-test2">
+		{{username}}{{time}}
+	</view>
+	<view wx:for="{{list}}" class="item"wx:key="{{title}}">
+		{{item.title}}
+	</view>
+
+	
+	
+
+</view>
